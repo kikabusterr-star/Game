@@ -1,0 +1,25 @@
+# HUD ScreenGui layout (create in Studio)
+- ScreenGui `HUD`
+  - Frame `StatsFrame` (Anchor top-left)
+    - TextLabel `MoneyLabel` (text bound from client script)
+    - TextLabel `RebirthLabel`
+    - TextLabel `OwnedLabel`
+  - Frame `EventBanner` (Anchor top, hidden by default)
+    - TextLabel `EventName`
+    - TextLabel `EventTimer`
+  - Frame `ShopButtons`
+    - TextButton `MoneyShopButton` (opens money shop frame)
+    - TextButton `RobuxShopButton`
+    - TextButton `CraftButton`
+  - Frame `MoneyShopFrame` (Visible false by default)
+    - TextButton `IncomeUpgrade`
+    - TextButton `SpawnLuckUpgrade`
+    - TextButton `BaseCapacityUpgrade`
+  - Frame `RobuxShopFrame` (Visible false by default)
+    - TextButton `DoubleMoney` (TODO: product id)
+    - TextButton `VIP` (TODO: product id)
+  - Frame `CraftingFrame` (Visible false by default)
+    - TextLabel `CraftDescription`
+    - TextBox `BrainrotIdBox` (input id to craft)
+    - TextButton `CraftButton`
+  - LocalScript `Client`
